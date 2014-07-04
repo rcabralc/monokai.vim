@@ -9,10 +9,11 @@ group called Argument, which one can use to improve highlighting.
 
 I personally use
 [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax) and
-[vim-ruby](https://girhub.com/vim-ruby/vim-ruby), and use the following in my
+[vim-ruby](https://github.com/vim-ruby/vim-ruby), and use the following in my
 `vimrc` file:
 
 ```
+colorscheme monokai "must come first
 hi! link rubyBlockParameter Argument
 hi! link javaScriptFuncArg Argument
 ```
