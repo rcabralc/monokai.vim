@@ -166,8 +166,6 @@ exe "hi! Cursor         ctermfg=".s:tblack    ." ctermbg=".s:twhite    ." cterm=
 hi! link lCursor Cursor
 exe "hi! MatchParen     ctermfg=NONE             ctermbg=NONE             cterm=reverse,underline guifg=NONE            guibg=NONE            gui=reverse,underline"
 
-" Non-standard stuff
-exe "hi! Argument       ctermfg=".s:torange   ." ctermbg=NONE             cterm=NONE              guifg=".s:orange   ." guibg=NONE            gui=NONE"
 
 " Must be at the end due to a bug in VIM trying to figuring out automagically
 " if the background set through Normal highlight group is dark or light.
