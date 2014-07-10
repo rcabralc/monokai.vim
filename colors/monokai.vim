@@ -10,7 +10,11 @@
 "         vim-monokai by Marcin Kulik (https://github.com/sickill/vim-monokai).
 
 " Palette
-let s:black     = "#272822"
+if exists("g:monokai_transparent_background") && g:monokai_transparent_background == 1
+    let s:black = "NONE"
+else
+    let s:black = "#272822"
+endif
 let s:darkgray  = "#49483e"
 let s:gray      = "#5f5c4e" " Not found in original Monokai, mean between previous and next grays.
 let s:lightgray = "#75715e"
@@ -23,7 +27,11 @@ let s:orange    = "#fd971f"
 let s:magenta   = "#f92672"
 
 " Terminal versions
-let s:tblack     = 235
+if exists("g:monokai_transparent_background") && g:monokai_transparent_background == 1
+    let s:tblack = "NONE"
+else
+    let s:tblack = 235
+endif
 let s:tdarkgray  = 238
 let s:tgray      = 240
 let s:tlightgray = 242
