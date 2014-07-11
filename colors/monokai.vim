@@ -159,9 +159,9 @@ exe "hi! SpellBad       ctermfg=NONE             ctermbg=NONE             cterm=
 exe "hi! SpellCap       ctermfg=NONE             ctermbg=NONE             cterm=NONE              guifg=NONE            guibg=NONE            gui=undercurl guisp=".s:cyan
 exe "hi! SpellRare      ctermfg=NONE             ctermbg=NONE             cterm=NONE              guifg=NONE            guibg=NONE            gui=undercurl guisp=".s:white
 exe "hi! SpellLocal     ctermfg=NONE             ctermbg=NONE             cterm=NONE              guifg=NONE            guibg=NONE            gui=undercurl guisp=".s:cyan
-exe "hi! Pmenu          ctermfg=".s:twhite    ." ctermbg=".s:tlightgray." cterm=NONE              guifg=".s:white    ." guibg=".s:lightgray." gui=NONE"
-exe "hi! PmenuSel       ctermfg=".s:tlime     ." ctermbg=".s:tdarkgray ." cterm=NONE              guifg=".s:lime     ." guibg=".s:darkgray ." gui=NONE"
-exe "hi! PmenuSbar      ctermfg=NONE             ctermbg=".s:tgray     ." cterm=NONE              guifg=NONE            guibg=".s:gray     ." gui=NONE"
+exe "hi! Pmenu          ctermfg=".s:tblack    ." ctermbg=".s:tlightgray." cterm=NONE              guifg=".s:black    ." guibg=".s:lightgray." gui=NONE"
+exe "hi! PmenuSel       ctermfg=".s:tblack    ." ctermbg=".s:tyellow   ." cterm=NONE              guifg=".s:black    ." guibg=".s:yellow   ." gui=NONE"
+exe "hi! PmenuSbar      ctermfg=NONE             ctermbg=".s:tdarkgray ." cterm=NONE              guifg=NONE            guibg=".s:darkgray ." gui=NONE"
 exe "hi! PmenuThumb     ctermfg=NONE             ctermbg=".s:twhite    ." cterm=NONE              guifg=NONE            guibg=".s:white    ." gui=NONE"
 exe "hi! TabLine        ctermfg=".s:tblack    ." ctermbg=".s:tlightgray." cterm=NONE              guifg=".s:black    ." guibg=".s:lightgray." gui=NONE"
 exe "hi! TabLineFill    ctermfg=".s:tlightgray." ctermbg=".s:tlightgray." cterm=NONE              guifg=".s:lightgray." guibg=".s:lightgray." gui=NONE"
