@@ -16,7 +16,6 @@ else
     let s:black = "#272822"
 endif
 let s:darkgray  = "#49483e"
-let s:gray      = "#5f5c4e" " Not found in original Monokai, mean between previous and next grays.
 let s:lightgray = "#75715e"
 let s:white     = "#f8f8f2"
 let s:lime      = "#a6e22e"
@@ -33,7 +32,6 @@ else
     let s:tblack = 235
 endif
 let s:tdarkgray  = 238
-let s:tgray      = 240
 let s:tlightgray = 242
 let s:twhite     = 255
 let s:tlime      = 148
@@ -169,7 +167,7 @@ exe "hi! TabLineSel     ctermfg=".s:twhite    ." ctermbg=".s:tdarkgray ." cterm=
 exe "hi! CursorColumn   ctermfg=NONE             ctermbg=".s:tdarkgray ." cterm=NONE              guifg=NONE            guibg=".s:darkgray ." gui=NONE"
 exe "hi! CursorLine     ctermfg=NONE             ctermbg=".s:tdarkgray ." cterm=NONE              guifg=NONE            guibg=".s:darkgray ." gui=NONE"
 exe "hi! CursorLineNr   ctermfg=".s:tlime     ." ctermbg=".s:tblack    ." cterm=NONE              guifg=".s:lime     ." guibg=".s:black    ." gui=NONE"
-exe "hi! ColorColumn    ctermfg=NONE             ctermbg=".s:tgray     ." cterm=NONE              guifg=NONE            guibg=".s:gray     ." gui=NONE"
+exe "hi! ColorColumn    ctermfg=NONE             ctermbg=".s:tdarkgray ." cterm=NONE              guifg=NONE            guibg=".s:darkgray ." gui=NONE"
 exe "hi! Cursor         ctermfg=".s:tblack    ." ctermbg=".s:twhite    ." cterm=NONE              guifg=".s:black     " guibg=".s:white    ." gui=NONE"
 hi! link lCursor Cursor
 exe "hi! MatchParen     ctermfg=NONE             ctermbg=NONE             cterm=reverse,underline guifg=NONE            guibg=NONE            gui=reverse,underline"
