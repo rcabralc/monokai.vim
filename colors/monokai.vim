@@ -59,7 +59,7 @@ let g:colors_name = "monokai"
 
 exe "hi! Normal         ctermfg=".s:twhite    ." ctermbg=".s:tblackbg  ." cterm=NONE              guifg=".s:white    ." guibg=".s:blackbg  ." gui=NONE"
 
-exe "hi! Comment        ctermfg=".s:tlightgray." ctermbg=NONE"         ." cterm=NONE              guifg=".s:lightgray." guibg=NONE            gui=NONE"
+exe "hi! Comment        ctermfg=".s:tlightgray." ctermbg=NONE"         ." cterm=NONE              guifg=".s:lightgray." guibg=NONE            gui=italic"
 "       *Comment        any comment
 
 exe "hi! Constant       ctermfg=".s:tpurple   ." ctermbg=NONE             cterm=bold              guifg=".s:purple   ." guibg=NONE            gui=bold"
@@ -95,7 +95,7 @@ exe "hi! PreProc        ctermfg=".s:tmagenta  ." ctermbg=NONE             cterm=
 "        Macro          same as Define
 "        PreCondit      preprocessor #if, #else, #endif, etc.
 
-exe "hi! Type           ctermfg=".s:tcyan     ." ctermbg=NONE             cterm=bold              guifg=".s:cyan     ." guibg=NONE            gui=bold"
+exe "hi! Type           ctermfg=".s:tcyan     ." ctermbg=NONE             cterm=NONE              guifg=".s:cyan     ." guibg=NONE            gui=italic"
 "       *Type           int, long, char, etc.
 "        StorageClass   static, register, volatile, etc.
 "        Structure      struct, union, enum, etc.
@@ -157,10 +157,10 @@ exe "hi! SpellBad       ctermfg=NONE             ctermbg=NONE             cterm=
 exe "hi! SpellCap       ctermfg=NONE             ctermbg=NONE             cterm=NONE              guifg=NONE            guibg=NONE            gui=undercurl guisp=".s:cyan
 exe "hi! SpellRare      ctermfg=NONE             ctermbg=NONE             cterm=NONE              guifg=NONE            guibg=NONE            gui=undercurl guisp=".s:white
 exe "hi! SpellLocal     ctermfg=NONE             ctermbg=NONE             cterm=NONE              guifg=NONE            guibg=NONE            gui=undercurl guisp=".s:cyan
-exe "hi! Pmenu          ctermfg=".s:tblack    ." ctermbg=".s:tlightgray." cterm=NONE              guifg=".s:black    ." guibg=".s:lightgray." gui=NONE"
-exe "hi! PmenuSel       ctermfg=".s:tblack    ." ctermbg=".s:tyellow   ." cterm=NONE              guifg=".s:black    ." guibg=".s:yellow   ." gui=NONE"
-exe "hi! PmenuSbar      ctermfg=NONE             ctermbg=".s:tdarkgray ." cterm=NONE              guifg=NONE            guibg=".s:darkgray ." gui=NONE"
-exe "hi! PmenuThumb     ctermfg=NONE             ctermbg=".s:twhite    ." cterm=NONE              guifg=NONE            guibg=".s:white    ." gui=NONE"
+exe "hi! Pmenu          ctermfg=".s:tdarkgray ." ctermbg=".s:twhite    ." cterm=NONE              guifg=".s:darkgray ." guibg=".s:white    ." gui=NONE"
+exe "hi! PmenuSel       ctermfg=".s:torange   ." ctermbg=".s:tdarkgray ." cterm=bold              guifg=".s:orange   ." guibg=".s:darkgray ." gui=bold"
+exe "hi! PmenuSbar      ctermfg=NONE             ctermbg=".s:tlightgray." cterm=NONE              guifg=NONE            guibg=".s:lightgray." gui=NONE"
+exe "hi! PmenuThumb     ctermfg=NONE             ctermbg=".s:tdarkgray ." cterm=NONE              guifg=NONE            guibg=".s:darkgray ." gui=NONE"
 exe "hi! TabLine        ctermfg=".s:tblack    ." ctermbg=".s:tlightgray." cterm=NONE              guifg=".s:black    ." guibg=".s:lightgray." gui=NONE"
 exe "hi! TabLineFill    ctermfg=".s:tlightgray." ctermbg=".s:tlightgray." cterm=NONE              guifg=".s:lightgray." guibg=".s:lightgray." gui=NONE"
 exe "hi! TabLineSel     ctermfg=".s:twhite    ." ctermbg=".s:tdarkgray ." cterm=bold              guifg=".s:white    ." guibg=".s:darkgray ." gui=bold"
