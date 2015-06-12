@@ -177,3 +177,9 @@ exe "hi! MatchParen     ctermfg=NONE             ctermbg=NONE             cterm=
 " if the background set through Normal highlight group is dark or light.
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
+
+" Additions for vim-gitgutter
+exe "hi! GitGutterAdd          ctermfg=".s:tlime     ." guifg=".s:lime
+exe "hi! GitGutterChange       ctermfg=".s:tyellow   ." guifg=".s:yellow
+exe "hi! GitGutterDelete       ctermfg=".s:tmagenta  ." guifg=".s:magenta
+exe "hi! GitGutterChangeDelete ctermfg=".s:tmagenta  ." guifg=".s:magenta
