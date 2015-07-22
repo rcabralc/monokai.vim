@@ -8,30 +8,77 @@
 "         Technique based on Solarized by Ethan Schoonover
 "         (https://github.com/altercation/vim-colors-solarized) and
 "         vim-monokai by Marcin Kulik (https://github.com/sickill/vim-monokai).
+"
+"         Thanks to Jørgen Ibsen (https://github.com/jibsen/tmcolorconv) for
+"         pointing out the need for gamma correction.
 
-" Palette
-let s:black     = "#272822"
-let s:darkgray  = "#49483e"
-let s:lightgray = "#75715e"
-let s:white     = "#f8f8f2"
-let s:lime      = "#a6e22e"
-let s:yellow    = "#e6db74"
-let s:purple    = "#ae81ff"
-let s:cyan      = "#66d9ef"
-let s:orange    = "#fd971f"
-let s:magenta   = "#f92672"
 
-" Terminal versions
-let s:tblack     = 235
-let s:tdarkgray  = 238
-let s:tlightgray = 242
-let s:twhite     = 255
-let s:tlime      = 148
-let s:tyellow    = 186
-let s:tpurple    = 141
-let s:tcyan      = 81
-let s:torange    = 208
-let s:tmagenta   = 197
+" Palette definition.
+"
+" The colors originally defined by Wimer Hazenberg were probably defined in a
+" generic RGB profile in an Apple computer, whose default gamma was 1.8.
+" Windows and Linux, and nowaday Macs use sRGB (gamma 2.2).  So, by default,
+" sRGB display is assumed and a gamma correction is applied to the original
+" pallete values in order to be more accurate about the original author
+" intentions.
+"
+" To avoid this correction which is applied now by default, set
+" g:monokai_output_srgb to 0.
+"
+" See details in http://www.hardtoc.com/archives/310.
+
+if !exists("g:monokai_output_srgb")
+    let g:monokai_output_srgb = 1
+endif
+
+if g:monokai_output_srgb == 0
+    " Original pallete values, generic RGB.
+    let s:black     = "#272822"
+    let s:darkgray  = "#49483e"
+    let s:lightgray = "#75715e"
+    let s:white     = "#f8f8f2"
+    let s:lime      = "#a6e22e"
+    let s:yellow    = "#e6db74"
+    let s:purple    = "#ae81ff"
+    let s:cyan      = "#66d9ef"
+    let s:orange    = "#fd971f"
+    let s:magenta   = "#f92672"
+
+    " Terminal versions
+    let s:tblack     = 235
+    let s:tdarkgray  = 238
+    let s:tlightgray = 242
+    let s:twhite     = 255
+    let s:tlime      = 148
+    let s:tyellow    = 186
+    let s:tpurple    = 141
+    let s:tcyan      = 81
+    let s:torange    = 208
+    let s:tmagenta   = 197
+else
+    let s:black     = "#34352d"
+    let s:darkgray  = "#5b5a4f"
+    let s:lightgray = "#888471"
+    let s:white     = "#f9f9f5"
+    let s:lime      = "#b3e43b"
+    let s:yellow    = "#ebe086"
+    let s:purple    = "#bd99ff"
+    let s:cyan      = "#75e0f2"
+    let s:orange    = "#ffa727"
+    let s:magenta   = "#fd4485"
+
+    " Terminal versions
+    let s:tblack     = 236
+    let s:tdarkgray  = 240
+    let s:tlightgray = 244
+    let s:twhite     = 231
+    let s:tlime      = 149
+    let s:tyellow    = 186
+    let s:tpurple    = 141
+    let s:tcyan      = 117
+    let s:torange    = 214
+    let s:tmagenta   = 204
+endif
 
 if exists("g:monokai_transparent_background") && g:monokai_transparent_background == 1
     let s:blackbg = "NONE"
