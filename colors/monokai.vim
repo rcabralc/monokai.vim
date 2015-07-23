@@ -108,7 +108,7 @@ function! s:hl(group, fg, bg, ...)
         let term_mod = 'NONE'
     endif
 
-    if term_mod == 'bold' && term_fg < 8
+    if term_mod == 'bold' && (term_fg == 3 || term_fg == 7)
         let term_mod = 'NONE'
     endif
 
