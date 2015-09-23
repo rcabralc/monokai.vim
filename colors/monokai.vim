@@ -68,7 +68,11 @@ else
 endif
 
 if g:monokai_colorscheme#transparent_background == 1
-    let s:palette['blackbg'] = { 'gui': 'NONE', 'term': 'NONE', 'term_default': 'NONE' }
+    let s:palette['blackbg'] = {
+        \ 'gui': s:palette['black']['gui'],
+        \ 'term': 'NONE',
+        \ 'term_default': 'NONE'
+    \ }
 else
     let s:palette['blackbg'] = {
         \ 'gui': s:palette['black']['gui'],
